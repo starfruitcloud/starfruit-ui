@@ -2,22 +2,24 @@
   "name": "istarfruit",
   "version": "0.0.1",
   "private": false,
-  "author":"dezhizhang",
-  "main":"dist/index.js",
-  "module":"dist/index.js",
-  "types":"dist/index.d.ts",
-  "description":"晓智科技基础平台组件库，专为用户提高开发速度而设计的组件库",
+  "author": "dezhizhang",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "晓智科技基础平台组件库，专为用户提高开发速度而设计的组件库",
   "license": "MIT",
-  "keywords":[
+  "keywords": [
     "Component",
     "UI",
     "React"
   ],
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/starfruitcloud/starfruit-ui.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starfruitcloud/starfruit-ui.git"
   },
-  "files":["dist"],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
@@ -43,7 +45,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "clear":"rimraf ./build ",
+    "clear": "rimraf ./build ",
     "build": "npm run clear && npm run build-ts && npm run build-css",
     "test": "react-scripts test",
     "build-ts": "tsc -p tsconfig.build.json",
